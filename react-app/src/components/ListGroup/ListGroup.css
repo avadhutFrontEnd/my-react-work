@@ -1,8 +1,5 @@
 
 .listGroup {
-    
-}
-
-.container {
-	background: yellow;
+    list-style: none;
+    padding: 0;
 }
