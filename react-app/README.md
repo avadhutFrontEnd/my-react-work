@@ -2,7 +2,7 @@
 
 # Commit message format : 
 
-[Course: 1. React 18 for Beginners > 4-Styling Components (32m) ] [ Video: #8-Adding-Icons_mp4  ] - React icons : import { BsFillCalendarFill } from 'react-icons';
+[Course: 1. React 18 for Beginners > 4-Styling Components (32m) ] [ Video: #9-Exercise-Using-CSS-Modules_mp4  ] - Exercise by Using 'CSS module' concept : import styles from './Button.module.css';
 
 
 
