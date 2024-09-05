@@ -1,17 +1,29 @@
 import { useState } from "react";
-import Button from "./components/Button/Button";
-import Alert from "./components/Alert";
-import ListGroup from "./components/ListGroup";
-import { BsFillCalendarFill } from 'react-icons/bs';
-import Like from "./components/Like";
+import produce from 'immer';
 
-function App() {
-
-  return (
-    <div>
-      <Like onClick={() => console.log('Clicked...')} />
-    </div>
-  );
+const App = () => {
+	const [bugs, setBugs] = useState([
+		{id: 1, title: 'Bug 1', fixed: false },
+		{id: 2, title: 'Bug 2', fixed: false },
+	])
+	
+	const handleClick = () => {
+	    // Im-mutable Way / Old way : 
+		// setBugs(bugs.map( bug => bug.id === 1 ? { ...bug, fixed: true } : bug ))
+		
+		// Mutable Way / `immer`  : 
+		setBugs(produce(draft => {
+			const bug = draft.find(bug => bug.id === 1);
+			if (bug) bug.fixed = true;
+		}))
+	};
+	
+	return (
+	<div>
+		{bugs.map(bug => <p key={bug.id}>{bug.title} {bug.fixed ? 'Fixed' : 'New'}</p> )}
+		<button onClick={handleClick}>Click Me</button>
+	</div>
+	);
 }
 
 export default App;
