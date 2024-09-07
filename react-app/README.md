@@ -2,7 +2,7 @@
 
 # Commit message format : 
 
-[Course: 1. React 18 for Beginners > 5-Managing Component State (42m) ] [ Video: #13-Exercise-Building-an-ExpandableText-Component_mp4_6min_22sec ] - `ExpandableText.tsx` component added.
+[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #2-Building-a-Form_mp4_3min_45sec ] - Name input, Age input and submit button.
 
 
 
