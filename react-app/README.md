@@ -2,6 +2,6 @@
 
 # Commit message format : 
 
-[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #14-Integrating-with-React-Hook-Form-and-Zod_mp4_9min_54sec ] - in `ExpenseForm.tsx` component add Zod validation and use `React-hook-form` to handle form-Data and form-Errors.
+[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #15-Adding-an-Expense_mp4_3min_35sec ] - by using `ExpenseForm.tsx` after form submission, use that data and add new expense in expense Array and and clear form after submission.
 
 
