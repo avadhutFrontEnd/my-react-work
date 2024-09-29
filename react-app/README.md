@@ -2,6 +2,6 @@
 
 # Commit message format : 
 
-[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #13-Building-the-Expense-Form_mp4_4min_36sec ] - creating `ExpenseForm.tsx` component and Revisited our `ExpenseFilter.tsx` component bcoz, we want to define all our `categories` in a single place, so we can reuse them in multiple components.
+[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #14-Integrating-with-React-Hook-Form-and-Zod_mp4_9min_54sec ] - in `ExpenseForm.tsx` component add Zod validation and use `React-hook-form` to handle form-Data and form-Errors.
 
 
