@@ -2,5 +2,5 @@
 
 # Commit message format : 
 
-[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #10-Showing-a-Loading-Indicator_mp4_3min_02sec ] - How we can show a Loading indicator while we are fetching the data and use of `finally()` method.
+[Course: 1. React 18 for Beginners > 6-Building Forms (71m) ] [ Video: #11-Deleting-Data_mp4_5min_50sec ] - Delete user (`optimistic update`) using `axios.delete()` method.   
 
