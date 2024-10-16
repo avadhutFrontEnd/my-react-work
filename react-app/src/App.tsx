@@ -2,35 +2,12 @@
 
 import { useEffect, useState } from "react";
 // we no longer need to use the `apiClient` because all the interactions with our API is done through our `userService` of  `user-service.ts` : 
+import useUsers from "./hooks/useUsers";
 import { CanceledError } from "./services/api-client";
 import userService, { User } from "./services/user-service";
 
-
 function App() {
-  const [users, setUsers] = useState<User[]>([]);
-  const [error, setError] = useState("");
-  const [isLoading, setLoading] = useState(false);
-
-  // Fetch Users List from Server:
-  // Option 1 : `then()` and `catch()` method implementation :
-  useEffect(() => {
-    const controller = new AbortController();
-
-    setLoading(true);
-    const { request, cancel } = userService .getAll<User>();
-    request
-      .then((res) => {
-        setUsers(res.data);
-        setLoading(false); // <---- Success : hide a Loader
-      })
-      .catch((err) => {
-        if (err instanceof CanceledError) return;
-        setError(err.message);
-        setLoading(false); // <---- Fail : hide a Loader
-      });
-
-    return () => cancel();
-  }, []);
+  const { users, error, isLoading, setUsers, setError } = useUsers();
 
   // Delete user : ---->  optimistic update.
   const deleteUser = (user: User) => {
